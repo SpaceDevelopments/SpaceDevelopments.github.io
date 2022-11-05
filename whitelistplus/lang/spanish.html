@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Whitelist+ Github Page</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<!-- Favicon -->
+<link rel="shortcut icon" href="../assets/imagenes/icon.png"/>
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+<!-- CSS Reset -->
+<link rel="stylesheet" href="../assets/css/normalize.css">
+
+<!-- Milligram CSS -->
+<link rel="stylesheet" href="../assets/css/milligram.css">
+
+<!-- You should properly set the path from the main file. -->
+</head>
+<body> 
+  <div class="config">
+    <div class="set-menu">
+      <select onChange="window.location.href=this.value" class="custom-select d-block my-2" id="change-page">
+	  	<option value="../lang/spanish.html">Español</option>
+        <option value="../lang/english.html">Ingles</option>
+	  </select>
+   </div>
+   </div>
+   
+<h1 id="whitelist">Whitelist+</h1>
+<p><img src="https://img.shields.io/spiget/downloads/103636?style=for-the-badge" alt="Versions-Supported">
+<img src="https://img.shields.io/spiget/tested-versions/103636?style=for-the-badge" alt="Versions-Supported"> 
+<img src="https://img.shields.io/spiget/version/103636?style=for-the-badge" alt="Spiget Version"></p>
+<a href="https://www.spigotmc.org/resources/whitelistplus.103636/"><img src="https://i.ibb.co/THWdLJm/download-spigot.png" alt="Plugin Version"></a></img>
+<h2 id="main-command">Comando Principal</h2>
+<p>El comando principal <code>/whitelist</code> que muestra los siguientes subcomandos:</p>
+<ul>
+<li><code>/whitelist add [playerName]</code> &rsaquo; Añade un jugador a la whitelist</li>
+<li><code>/whitelist remove [playerName]</code> &rsaquo; Elimina un jugador de la whitelist</li>
+<li><code>/whitelist on</code> &rsaquo; Activa la whitelist</li>
+<li><code>/whitelist off</code> &rsaquo; Desactiva la whitelist</li>
+<li><code>/whitelist list</code> &rsaquo; Muestra los jugadores que estan en la whitelist y sus nombres</li>
+<li><code>/whitelist reload</code> &rsaquo; Recarga el archivo de configuracion</li>
+</ul>
+<h2 id="permissions">Permisos</h2>
+<p>Command Permission: <code>whitelistplus.commands.use</code></p>
+<p>Bypass Permission: <code>whitelistplus.bypass</code></p>
+
+<h2 id="api">API</h2>
+<p>The API esta divida en 8 metodos</p>
+<ul>
+<li><code>WhitelistAPI.addPlayer()</code> &rsaquo; Permite añadir a un jugador a la whitelist [String]</li>
+<li><code>WhitelistAPI.removePlayer()</code> &rsaquo; Permite remover a un jugador a la whitelist [String]</li>
+<li><code>WhitelistAPI.isWhitelist()</code> &rsaquo; Permite saber si un jugador esta en la whitelist [String]</li>
+<li><code>WhitelistAPI.setWhitelist()</code> &rsaquo; Permite cambiar el estado de la whitelist [Boolean]</li>
+<li><code>WhitelistAPI.getPlayers()</code> &rsaquo; Permite ver los jugadores que estan en la whitelist [String]</li>
+<li><code>WhitelistAPI.isEnabled()</code> &rsaquo; Permite obtener el estado actual de la whitelist [Boolean]</li>
+<li><code>WhitelistAPI.setWhitelistMessage()</code> &rsaquo; Permite cambiar el mensaje de expulsion cuando no estas en la whitelist [String]</li>
+<li><code>WhitelistAPI.getAPIVersion()</code> &rsaquo; Permite comprobar la version de la API [Double]</li>
+<li><code>WhitelistAPI.getVersion()</code> &rsaquo; Permite comprobar la version de la plugin [Double]</li>
+</ul>
+
+<h2 id="imagenes">Imagenes</h2>
+<center><h3>Mensaje Principal</h3>
+<img src="../assets/imagenes/main-menu.png"></center><p>&nbsp;</p>
+
+<center><h3>Mensaje de Expulsion</h3> 
+<img src="../assets/imagenes/kick-message.png"></center><p>&nbsp;</p>
+ 
+<h2 id="bug-report">Bug Report</h2>
+<p>Si encuentra algún error en el plugin, infórmelo creando un issues <a href="https://github.com/SpaceDevelopments/Whitelistplus/issues/new">aqui</a></p>
+</body>
+</html>
